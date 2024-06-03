@@ -7,7 +7,7 @@
         <div
           class="flex items-center text-2xl font-bold tracking-tight text-gray-500 lowercase"
         >
-          <img src="/assets/logo.png" class="max-h-[45px] w-auto" /><span
+          <img src="/assets/logo.png" class="max-h-[35px] w-auto" /><span
             class="sr-only"
             >Cryptrader</span
           >
@@ -29,6 +29,17 @@
 
     <main class="my-8 min-h-[80vh]">
       <slot />
+
+      <p class="mt-12 text-sm italic text-gray-500 transition-all">
+        Data from
+        <NuxtLink
+          to="https://www.coinlore.com/cryptocurrency-data-api"
+          target="_blank"
+          class="underline hover:text-teal-600 hover:underline-offset-4"
+          >CoinLore</NuxtLink
+        >
+        API
+      </p>
     </main>
 
     <footer class="w-full pt-12 pb-8 mt-40 border-t border-gray-200">
