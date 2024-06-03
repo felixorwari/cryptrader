@@ -1,5 +1,4 @@
 <script setup>
-const route = useRoute();
 const { data } = await useFetch("/api/tickers/", {
   query: { limit: 15 },
 });
@@ -7,7 +6,7 @@ const { data } = await useFetch("/api/tickers/", {
 <template>
   <div>
     <h1 class="text-4xl font-bold leading-tight tracking-wide">
-      Top Cryptocurrency Prices
+      Top Crypto Prices
     </h1>
 
     <div class="mt-8 overflow-x-auto">
@@ -28,7 +27,7 @@ const { data } = await useFetch("/api/tickers/", {
         <tbody>
           <tr
             v-for="currency in data.data"
-            :key="data.data.id"
+            :key="currency.id"
             class="border-b border-gray-200"
           >
             <td class="px-4 py-6 max-w-10">{{ currency.rank }}</td>
