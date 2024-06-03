@@ -2,7 +2,7 @@
   <div class="max-w-screen-xl px-4 mx-auto">
     <header class="sticky top-0 z-50">
       <nav
-        class="flex items-center w-full gap-6 px-4 border-b bg-white/90 backdrop-blur-lg"
+        class="flex items-center w-full gap-6 px-4 border-b bg-white/70 backdrop-blur"
       >
         <div
           class="flex items-center text-2xl font-bold tracking-tight text-gray-500 lowercase"
